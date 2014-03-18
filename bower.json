@@ -1,0 +1,20 @@
+{
+  "name": "tap-beep-beep",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jegtnes/tap-beep-beep",
+  "authors": [
+    "Alex Jegtnes <saccosekk@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fries": "~2.0.3"
+  }
+}
