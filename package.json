@@ -1,0 +1,22 @@
+{
+  "name": "tap-beep-beep",
+  "version": "0.0.1",
+  "description": "tap-beep-beep",
+  "main": "Gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jegtnes/tap-beep-beep.git"
+  },
+  "dependencies": {
+    "bower": "~1.2.8",
+    "gulp": "~3.5.5",
+    "gulp-concat": "*",
+    "gulp-uglify": "*",
+    "gulp-sass": "*"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/jegtnes/tap-beep-beep/issues"
+  },
+  "homepage": "https://github.com/jegtnes/tap-beep-beep"
+}
