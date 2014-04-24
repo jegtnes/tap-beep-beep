@@ -1,5 +1,6 @@
 $brand: #962121;
 $grey--dark: #363636;
+$grey--medium: #424242;
 $grey--light: #b0b0b0;
 
 @font-face {
@@ -26,9 +27,35 @@ $grey--light: #b0b0b0;
 }
 
 .component-heading {
-  text-transform: uppercase;
+  border-bottom: 2px solid $brand;
   color: $brand;
   font-size: 14px;
   font-weight: 500;
-  border-bottom: 2px solid $brand;
+  text-transform: uppercase;
+}
+
+.list {
+  > li {
+    border-top: 1px solid $grey--light;
+    color: $grey--dark;
+
+    &.list-item-two-lines {
+      .list-heading,
+      .list-subheading {
+        color: $grey--dark;
+      }
+    }
+
+    &:first-of-type {
+      border-top: 0;
+    }
+  }
+}
+
+.list-heading {
+  font-size: 16px;
+}
+
+.list-subheading {
+  font-size: 14px;
 }

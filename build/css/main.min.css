@@ -2038,8 +2038,22 @@ you can use the generic selector below, but it's slower:
   font-weight: 400; }
 
 .component-heading {
-  text-transform: uppercase;
+  border-bottom: 2px solid #962121;
   color: #962121;
   font-size: 14px;
   font-weight: 500;
-  border-bottom: 2px solid #962121; }
+  text-transform: uppercase; }
+
+.list > li {
+  border-top: 1px solid #b0b0b0;
+  color: #363636; }
+  .list > li.list-item-two-lines .list-heading, .list > li.list-item-two-lines .list-subheading {
+    color: #363636; }
+  .list > li:first-of-type {
+    border-top: 0; }
+
+.list-heading {
+  font-size: 16px; }
+
+.list-subheading {
+  font-size: 14px; }
