@@ -2017,3 +2017,10 @@ you can use the generic selector below, but it's slower:
   color: white;
   font-size: 13px;
   text-align: center; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/build/fonts/icomoon.eot');
+  src: url('/build/fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('/build/fonts/icomoon.woff') format('woff'), url('/build/fonts/icomoon.ttf') format('truetype'), url('/build/fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
