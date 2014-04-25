@@ -9,6 +9,7 @@ var paths = {
     'bower_components/fries/dist/fries.min.js',
     'bower_components/hammerjs/hammer.min.js',
     'bower_components/jquery/dist/jquery.min.js',
+    'bower_components/gmaps/gmaps.js',
     'js/**/*.js',
   ],
   styles: [
