@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TapBeepBeep</title>
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="196x196" href="/app-icon.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="build/css/main.min.css">
+    <link rel="stylesheet" href="build/css/menu.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,100' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="build/js/main.min.js"></script>
+</head>
+<body>
+
+  <nav class="main-navigation">
+    <ul>
+      <li class="main-navigation__point">
+        Tapped in at
+        <strong>Q Block</strong>
+        14:35 remaining
+      </li>
+      <li class="main-navigation__item"><a href="#"><i class="icon-map"></i> Tap Map</a></li>
+      <li class="main-navigation__item"><a href="#"><i class="icon-location-marker"></i> Tap Points</a></li>
+      <li class="main-navigation__item"><a href="#"><i class="icon-settings"></i> Settings</a></li>
+      <li class="main-navigation__item"><a href="#"><i class="icon-screen-lock-portrait"></i> Log Out</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <header class="action-bar fixed-top">
+      <a href="" class="app-icon action">
+        <i class="icon-fries"></i>
+      </a>
+      <h1 class="title">Tap Points</h1>
+    </header>
+
+    <div class="content inset">
+      <div class="component">
+        <h3 class="component-heading">Tap points nearby</h3>
+        <ul class="list">
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">Cribbs Q</h3>
+            <h4 class="list-subheading">40 metres away</h4>
+          </li>
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">Q Block Information Point</h3>
+            <h4 class="list-subheading">60 metres away</h4>
+          </li>
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">The Q Block Pond</h3>
+            <h4 class="list-subheading">65 metres away</h4>
+          </li>
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">Full of Beans</h3>
+            <h4 class="list-subheading">80 metres away</h4>
+          </li>
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">Jimmy Deane's Fruit, Veg &amp; Salad</h3>
+            <h4 class="list-subheading">85 metres away</h4>
+          </li>
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">The SU Shop</h3>
+            <h4 class="list-subheading">90 metres away</h4>
+          </li>
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">Escape Bar</h3>
+            <h4 class="list-subheading">100 metres away</h4>
+          </li>
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">Red Bar</h3>
+            <h4 class="list-subheading">105 metres away</h4>
+          </li>
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">Cribbs Q</h3>
+            <h4 class="list-subheading">40 metres away</h4>
+          </li>
+          <li class="list-item-two-lines">
+            <h3 class="list-heading">Cribbs Q</h3>
+            <h4 class="list-subheading">40 metres away</h4>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.action-bar .app-icon').on('click', function(e) {
+      $('.main-navigation').toggleClass('main-navigation--open');
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  });
+</script>
+
+</body>
+</html>
