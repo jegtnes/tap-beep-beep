@@ -2068,3 +2068,6 @@ you can use the generic selector below, but it's slower:
   height: 32px;
   margin-right: 6px;
   width: 32px; }
+
+img {
+  max-width: 100%; }
