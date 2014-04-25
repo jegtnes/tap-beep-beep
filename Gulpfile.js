@@ -7,6 +7,8 @@ var sass = require('gulp-sass');
 var paths = {
   scripts: [
     'bower_components/fries/dist/fries.min.js',
+    'bower_components/hammerjs/hammer.min.js',
+    'bower_components/jquery/dist/jquery.min.js',
     'js/**/*.js',
   ],
   styles: [
