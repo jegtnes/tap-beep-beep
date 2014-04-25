@@ -2047,16 +2047,22 @@ you can use the generic selector below, but it's slower:
 .list > li {
   border-top: 1px solid #b0b0b0;
   color: #363636; }
-  .list > li.list-item-two-lines .list-heading, .list > li.list-item-two-lines .list-subheading {
+  .list > li.list-item-two-lines .list-heading {
     color: #363636; }
+  .list > li.list-item-two-lines .list-subheading {
+    color: #b0b0b0; }
   .list > li:first-of-type {
     border-top: 0; }
+
+.list-heading, .list-subheading {
+  line-height: 1; }
 
 .list-heading {
   font-size: 16px; }
 
 .list-subheading {
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: 300; }
 
 .tbb-icon {
   height: 32px;

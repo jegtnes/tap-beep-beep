@@ -40,9 +40,12 @@ $grey--light: #b0b0b0;
     color: $grey--dark;
 
     &.list-item-two-lines {
-      .list-heading,
-      .list-subheading {
+      .list-heading {
         color: $grey--dark;
+      }
+
+      .list-subheading {
+        color: $grey--light;
       }
     }
 
@@ -52,12 +55,18 @@ $grey--light: #b0b0b0;
   }
 }
 
+.list-heading,
+.list-subheading {
+  line-height: 1;
+}
+
 .list-heading {
   font-size: 16px;
 }
 
 .list-subheading {
   font-size: 14px;
+  font-weight: 300;
 }
 
 .tbb-icon {
