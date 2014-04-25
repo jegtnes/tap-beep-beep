@@ -1,3 +1,11 @@
+%clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
 $brand: #962121;
 $grey--dark: #363636;
 $grey--medium: #424242;
@@ -83,9 +91,9 @@ img {
 }
 
 .card {
+  @extend %clearfix;
   background-color: $white;
   color: $grey--light;
-  @
 }
 
 .card__heading {

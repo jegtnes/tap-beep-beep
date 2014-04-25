@@ -2017,3 +2017,78 @@ you can use the generic selector below, but it's slower:
   color: white;
   font-size: 13px;
   text-align: center; }
+
+%clearfix:after {
+  clear: both;
+  content: '';
+  display: table; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/build/fonts/icomoon.eot');
+  src: url('/build/fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('/build/fonts/icomoon.woff') format('woff'), url('/build/fonts/icomoon.ttf') format('truetype'), url('/build/fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+.action-bar {
+  background-color: #962121;
+  border-bottom: 0;
+  box-shadow: none; }
+
+.page {
+  background-color: #eee; }
+
+.main-heading {
+  color: #363636;
+  font-weight: 400; }
+
+.component-heading {
+  border-bottom: 2px solid #962121;
+  color: #962121;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.list > li {
+  border-top: 1px solid #b0b0b0;
+  color: #363636; }
+  .list > li.list-item-two-lines .list-heading {
+    color: #363636; }
+  .list > li.list-item-two-lines .list-subheading {
+    color: #b0b0b0; }
+  .list > li:first-of-type {
+    border-top: 0; }
+
+.list-heading, .list-subheading {
+  line-height: 1; }
+
+.list-heading, .card__heading {
+  font-size: 16px; }
+
+.list-subheading, .card__subheading {
+  font-size: 14px;
+  font-weight: 300; }
+
+.tbb-icon {
+  height: 32px;
+  margin-right: 6px;
+  width: 32px; }
+
+img {
+  max-width: 100%; }
+
+.card {
+  background-color: #fff;
+  color: #b0b0b0; }
+
+.card__heading {
+  color: #363636;
+  font-weight: 400; }
+
+.card__content {
+  padding: 0 5px 5px; }
+
+.card__timestamp {
+  color: #b0b0b0;
+  float: right;
+  font-size: 12px; }
