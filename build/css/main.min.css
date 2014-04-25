@@ -2154,6 +2154,11 @@ you can use the generic selector below, but it's slower:
   font-size: 13px;
   text-align: center; }
 
+.card:after {
+  clear: both;
+  content: '';
+  display: table; }
+
 @font-face {
   font-family: 'icomoon';
   src: url('/build/fonts/icomoon.eot');
@@ -2183,16 +2188,48 @@ you can use the generic selector below, but it's slower:
 .list > li {
   border-top: 1px solid #b0b0b0;
   color: #363636; }
-  .list > li.list-item-two-lines .list-heading, .list > li.list-item-two-lines .list-subheading {
+  .list > li.list-item-two-lines .list-heading {
     color: #363636; }
+  .list > li.list-item-two-lines .list-subheading {
+    color: #b0b0b0; }
   .list > li:first-of-type {
     border-top: 0; }
 
-.list-heading {
+.list-heading, .list-subheading {
+  line-height: 1; }
+
+.list-heading, .card__heading {
   font-size: 16px; }
 
-.list-subheading {
-  font-size: 14px; }
+.list-subheading, .card__subheading {
+  font-size: 14px;
+  font-weight: 300; }
+
+.tbb-icon {
+  height: 32px;
+  margin-right: 6px;
+  width: 32px; }
+
+img {
+  max-width: 100%; }
+
+.card {
+  background-color: #fff;
+  color: #b0b0b0;
+  margin-bottom: 12px; }
+
+.card__heading {
+  color: #363636;
+  font-weight: 400; }
+
+.card__content {
+  padding: 0 5px 5px;
+  overflow: auto; }
+
+.card__timestamp {
+  color: #b0b0b0;
+  float: right;
+  font-size: 10px; }
 
 .action-bar.fixed-top {
   z-index: 9999; }

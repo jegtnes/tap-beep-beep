@@ -1,7 +1,16 @@
+%clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
 $brand: #962121;
 $grey--dark: #363636;
 $grey--medium: #424242;
 $grey--light: #b0b0b0;
+$white: #fff;
 
 @font-face {
   font-family: 'icomoon';
@@ -40,9 +49,12 @@ $grey--light: #b0b0b0;
     color: $grey--dark;
 
     &.list-item-two-lines {
-      .list-heading,
-      .list-subheading {
+      .list-heading {
         color: $grey--dark;
+      }
+
+      .list-subheading {
+        color: $grey--light;
       }
     }
 
@@ -52,10 +64,51 @@ $grey--light: #b0b0b0;
   }
 }
 
-.list-heading {
+.list-heading,
+.list-subheading {
+  line-height: 1;
+}
+
+.list-heading,
+.card__heading {
   font-size: 16px;
 }
 
-.list-subheading {
+.list-subheading,
+.card__subheading {
   font-size: 14px;
+  font-weight: 300;
+}
+
+.tbb-icon {
+  height: 32px;
+  margin-right: 6px;
+  width: 32px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  @extend %clearfix;
+  background-color: $white;
+  color: $grey--light;
+  margin-bottom: 12px;
+}
+
+.card__heading {
+  color: $grey--dark;
+  font-weight: 400;
+}
+
+.card__content {
+  padding: 0 5px 5px;
+  overflow: auto;
+}
+
+.card__timestamp {
+  color: $grey--light;
+  float: right;
+  font-size: 10px;
 }
