@@ -10,6 +10,7 @@ $brand: #962121;
 $grey--dark: #363636;
 $grey--medium: #424242;
 $grey--light: #b0b0b0;
+$almost--white: #eee;
 $white: #fff;
 
 @font-face {
@@ -27,7 +28,7 @@ $white: #fff;
 }
 
 .page {
-  background-color: #eee;
+  background-color: $almost--white;
 }
 
 .main-heading {
@@ -125,7 +126,7 @@ img {
   position: absolute;
   right: 10px;
   left: 200px;
-  background-color: #eee;
+  background-color: $almost--white;
 }
 
 .spinner {

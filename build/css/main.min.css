@@ -2108,3 +2108,44 @@ img {
 
 .spinner li a {
   color: #363636; }
+
+.action-bar.fixed-top {
+  z-index: 9999; }
+
+.main-navigation {
+  width: 70%;
+  position: fixed;
+  top: 48px;
+  bottom: 0;
+  left: -100%;
+  z-index: 9998;
+  background-color: #eee;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease; }
+  .main-navigation.main-navigation--open {
+    left: 0; }
+  .main-navigation .main-navigation__item a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #3d3d3d; }
+    .main-navigation .main-navigation__item a:hover, .main-navigation .main-navigation__item a:focus {
+      background-color: #e0e0e0; }
+    .main-navigation .main-navigation__item a i {
+      display: inline-block;
+      width: 25px; }
+  .main-navigation .main-navigation__point {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #ccc;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase; }
+    .main-navigation .main-navigation__point strong {
+      display: block;
+      color: #4f4f4f;
+      font-size: 40px;
+      line-height: 45px; }
