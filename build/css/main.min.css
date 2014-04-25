@@ -2086,9 +2086,10 @@ img {
   font-weight: 400; }
 
 .card__content {
-  padding: 0 5px 5px; }
+  padding: 0 5px 5px;
+  overflow: auto; }
 
 .card__timestamp {
   color: #b0b0b0;
   float: right;
-  font-size: 12px; }
+  font-size: 10px; }

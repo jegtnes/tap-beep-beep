@@ -103,10 +103,11 @@ img {
 
 .card__content {
   padding: 0 5px 5px;
+  overflow: auto;
 }
 
 .card__timestamp {
   color: $grey--light;
   float: right;
-  font-size: 12px;
+  font-size: 10px;
 }
