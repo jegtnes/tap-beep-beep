@@ -17,6 +17,7 @@
   "dependencies": {
     "jquery": "latest",
     "fries": "~2.0.3",
-    "hammerjs": "latest"
+    "hammerjs": "latest",
+    "gmaps": "~0.4.1"
   }
 }
