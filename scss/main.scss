@@ -112,3 +112,26 @@ img {
   float: right;
   font-size: 10px;
 }
+
+.toggle-spinner {
+  .icon-new {
+    font-size: 32px;
+    color: $white;
+  }
+}
+
+.action-overflow-list {
+  display: block;
+  position: absolute;
+  right: 10px;
+  left: 200px;
+  background-color: #eee;
+}
+
+.spinner {
+  li {
+    a {
+      color: $grey--dark;
+    }
+  }
+}

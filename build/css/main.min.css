@@ -2094,3 +2094,17 @@ img {
   color: #b0b0b0;
   float: right;
   font-size: 10px; }
+
+.toggle-spinner .icon-new {
+  font-size: 32px;
+  color: #fff; }
+
+.action-overflow-list {
+  display: block;
+  position: absolute;
+  right: 10px;
+  left: 200px;
+  background-color: #eee; }
+
+.spinner li a {
+  color: #363636; }
