@@ -2057,3 +2057,8 @@ you can use the generic selector below, but it's slower:
 
 .list-subheading {
   font-size: 14px; }
+
+.tbb-icon {
+  height: 32px;
+  margin-right: 6px;
+  width: 32px; }
