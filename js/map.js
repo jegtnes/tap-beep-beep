@@ -6,6 +6,9 @@ $(document).ready(function() {
       lng: -2.547272
     });
 
+
+    // Kudos to the the fine ladies and gents at Paulund for this function
+    // http://www.paulund.co.uk/create-google-maps-with-gmaps-js
     GMaps.geolocate({
     success: function(position){
       map.setCenter(position.coords.latitude, position.coords.longitude);
