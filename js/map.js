@@ -72,6 +72,28 @@ $(document).ready(function() {
       }
     });
 
+    // Escape Bar
+    map.addMarker({
+      lat: 51.500200,
+      lng: -2.547376,
+      icon: "/build/img/map-marker-tappoint.png",
+      title: 'Escape Bar',
+      infoWindow: {
+        content: '<p>Escape Bar</p>'
+      }
+    });
+
+    // Red Bar
+    map.addMarker({
+      lat: 51.500049,
+      lng: -2.547588,
+      icon: "/build/img/map-marker-tappoint.png",
+      title: 'Red Bar',
+      infoWindow: {
+        content: '<p>Red Bar</p>'
+      }
+    });
+
     // Kudos to the the fine ladies and gents at Paulund for this function
     // http://www.paulund.co.uk/create-google-maps-with-gmaps-js
     GMaps.geolocate({
