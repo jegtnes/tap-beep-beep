@@ -39,6 +39,16 @@ $(document).ready(function() {
       }
     });
 
+    // Full Of Beans
+    map.addMarker({
+      lat: 51.500395,
+      lng: -2.548038,
+      icon: "/build/img/map-marker-tappoint.png",
+      title: 'Full Of Beans',
+      infoWindow: {
+        content: '<p>Full Of Beans</p>'
+      }
+    });
 
     // Kudos to the the fine ladies and gents at Paulund for this function
     // http://www.paulund.co.uk/create-google-maps-with-gmaps-js
