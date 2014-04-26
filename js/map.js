@@ -17,6 +17,17 @@ $(document).ready(function() {
       }
     });
 
+    // Q Block Info Point
+    map.addMarker({
+      lat: 51.501285,
+      lng: -2.548807,
+      icon: "/build/img/map-marker-tappoint.png",
+      title: 'Q Block Info Point',
+      infoWindow: {
+        content: '<p>Q Block Info Point</p>'
+      }
+    });
+
     // Kudos to the the fine ladies and gents at Paulund for this function
     // http://www.paulund.co.uk/create-google-maps-with-gmaps-js
     GMaps.geolocate({
