@@ -2301,3 +2301,26 @@ img {
       color: #4f4f4f;
       font-size: 40px;
       line-height: 45px; }
+
+.filter-menu {
+  width: 60%;
+  position: fixed;
+  top: 48px;
+  bottom: 0;
+  right: 0;
+  z-index: 9998;
+  background: white;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  color: black;
+  padding-left: 10px; }
+  .filter-menu li {
+    display: block !important;
+    padding: 2px; }
+  .filter-menu p {
+    margin: 10px 0 0; }
+  .filter-menu input {
+    margin-right: 10px; }
+  .filter-menu label {
+    width: 50%;
+    display: inline-block; }

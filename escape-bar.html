@@ -46,6 +46,25 @@
         <h1 class="title">Escape Bar</h1>
       </div>
       <ul class="actions pull-right">
+        <li>
+          <a class="action toggle-filter-menu"><i class="icon-import-export"></i></a>
+          <div class="filter-menu">
+            <p>Sort results</p>
+            <ul>
+              <li><input type="radio" checked="true" name="sort" id="sort-best"><label for="sort-best">Best</label></li>
+              <li><input type="radio" name="sort" id="sort-hot"><label for="sort-hot">Hot</label></li>
+              <li><input type="radio" name="sort" id="sort-new"><label for="sort-new">New</label></li>
+              <li><input type="radio" name="sort" id="sort-controversial"><label for="sort-controversial">Controversial</label></li>
+            </ul>
+            <p>Filter results</p>
+            <ul>
+              <li><input type="checkbox" checked="true" name="filter" id="filter-photo"><label for="filter-photo">Photo</label></li>
+              <li><input type="checkbox" checked="true" name="filter" id="filter-video"><label for="filter-video">Video</label></li>
+              <li><input type="checkbox" checked="true" name="filter" id="filter-audio"><label for="filter-audio">Audio</label></li>
+              <li><input type="checkbox" checked="true" name="filter" id="filter-text"><label for="filter-text">Text</label></li>
+            </ul>
+          </div>
+        </li>
         <li class="action-overflow-docs">
           <a class="action toggle-spinner"><i class="icon-new"></i></a>
           <ol reversed="reversed" class="action-overflow-list spinner" style="display: none;">
