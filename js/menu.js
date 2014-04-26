@@ -7,7 +7,7 @@ $(function(){
     $('.main-navigation').removeClass('main-navigation--open');
   })
 
-  Hammer($('.app-icon')[0]).on('tap', function(event) {
+  Hammer($('#menu-toggle')[0]).on('tap', function() {
     $('.main-navigation').toggleClass('main-navigation--open');
-  })
+  });
 })

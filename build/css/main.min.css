@@ -2109,6 +2109,10 @@ img {
 .spinner li a {
   color: #363636; }
 
+.menu-toggle {
+  display: inline-block;
+  overflow: auto; }
+
 .action-bar.fixed-top {
   z-index: 9999; }
 
