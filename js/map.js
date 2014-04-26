@@ -8,8 +8,8 @@ $(document).ready(function() {
 
     // Cribs Q
     map.addMarker({
-      lat: 51.501545,
-      lng: -2.548797,
+      lat: 51.501629,
+      lng: -2.548818,
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Cribs Q',
       infoWindow: {
