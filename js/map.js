@@ -61,6 +61,17 @@ $(document).ready(function() {
       }
     });
 
+    // The SU Shop
+    map.addMarker({
+      lat: 51.500200,
+      lng: -2.547376,
+      icon: "/build/img/map-marker-tappoint.png",
+      title: 'The SU Shop',
+      infoWindow: {
+        content: '<p>The SU Shop</p>'
+      }
+    });
+
     // Kudos to the the fine ladies and gents at Paulund for this function
     // http://www.paulund.co.uk/create-google-maps-with-gmaps-js
     GMaps.geolocate({
