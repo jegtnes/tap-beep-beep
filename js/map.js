@@ -28,6 +28,18 @@ $(document).ready(function() {
       }
     });
 
+    // Q Block Pond
+    map.addMarker({
+      lat: 51.501120,
+      lng: -2.548608,
+      icon: "/build/img/map-marker-tappoint.png",
+      title: 'Q Block Pond',
+      infoWindow: {
+        content: '<p>Q Block Pond</p>'
+      }
+    });
+
+
     // Kudos to the the fine ladies and gents at Paulund for this function
     // http://www.paulund.co.uk/create-google-maps-with-gmaps-js
     GMaps.geolocate({
