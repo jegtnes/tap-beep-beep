@@ -74,8 +74,8 @@ $(document).ready(function() {
 
     // Escape Bar
     map.addMarker({
-      lat: 51.500200,
-      lng: -2.547376,
+      lat: 51.500061,
+      lng: -2.547478,
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Escape Bar',
       infoWindow: {
