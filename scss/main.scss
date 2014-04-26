@@ -96,6 +96,16 @@ img {
   background-color: $white;
   color: $grey--light;
   margin-bottom: 12px;
+  position: relative;
+}
+
+.card__overlay {
+  position: absolute;
+  background-color: rgba($grey--dark, 0.7);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .card__heading {
