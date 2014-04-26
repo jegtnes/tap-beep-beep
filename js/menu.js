@@ -10,4 +10,10 @@ $(function(){
   Hammer($('#menu-toggle')[0]).on('tap', function() {
     $('.main-navigation').toggleClass('main-navigation--open');
   });
+
+  $('.filter-menu').hide();
+
+  $('.toggle-filter-menu').on('click', function() {
+    $('.filter-menu').toggle();
+  });
 })
