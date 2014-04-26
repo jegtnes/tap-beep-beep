@@ -2141,6 +2141,8 @@ img {
     .main-navigation .main-navigation__item a i {
       display: inline-block;
       width: 25px; }
+  .main-navigation .main-navigation__item--active {
+    font-weight: bold; }
   .main-navigation .main-navigation__point {
     padding: 10px 15px;
     border-bottom: 1px solid #e6e6e6;
