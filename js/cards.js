@@ -7,12 +7,22 @@ $(document).ready(function() {
 
   $('.card__overlay__section--like,
   .card__overlay__section--dislike').on('click', function() {
+    rated = $(this).hasClass('js-rated');
+    $(this).toggleClass('js-rated');
+
     stat = $(this).find('.card__overlay__social-stat');
     rating = parseInt(stat.text());
-    newRating = rating + 1;
-    stat.text('' + newRating);
 
-    $(this).addClass('card__overlay__social-stat--active');
+    if(rated) {
+      rating--;
+    }
+    else {
+      rating++;
+    }
+
+    stat.text(rating);
+
+    $(this).toggleClass('card__overlay__social-stat--active');
 
     $(this).closest('.card__overlay').delay(250).queue(function(){
       $(this).addClass('card__overlay--hidden');
