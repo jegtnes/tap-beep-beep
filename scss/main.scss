@@ -26,11 +26,23 @@ $white: #fff;
   font-style: normal;
 }
 
-.icon-new-text:before {
-	content: "\e00b";
+.icon-newtext:before,
+.icon-newphoto:before {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'icomoon';
 }
-.icon-new-photo:before {
-	content: "\e00c";
+
+.icon-newtext:before {
+  content: "\e00b";
+}
+.icon-newphoto:before {
+  content: "\e00c";
 }
 
 body {
