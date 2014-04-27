@@ -2079,6 +2079,9 @@ you can use the generic selector below, but it's slower:
   font-size: 32px;
   text-align: center; }
 
+.card__overlay__social-stat--active {
+  color: #db5b5b; }
+
 @font-face {
   font-family: 'Flaticon';
   src: url('/build/fonts/flaticon.eot');

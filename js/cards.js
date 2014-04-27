@@ -11,5 +11,12 @@ $(document).ready(function() {
     rating = parseInt(stat.text());
     newRating = rating + 1;
     stat.text('' + newRating);
+
+    $(this).addClass('card__overlay__social-stat--active');
+
+    $(this).closest('.card__overlay').delay(250).queue(function(){
+      $(this).addClass('card__overlay--hidden');
+      $(this).dequeue();
+    });
   })
 });
