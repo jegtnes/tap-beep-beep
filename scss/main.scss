@@ -26,6 +26,13 @@ $white: #fff;
   font-style: normal;
 }
 
+.icon-new-text:before {
+	content: "\e00b";
+}
+.icon-new-photo:before {
+	content: "\e00c";
+}
+
 body {
   color: $grey--dark;
 }
