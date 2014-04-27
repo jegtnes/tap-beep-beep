@@ -19,10 +19,14 @@
   margin-left: 20px;
 }
 
-.flaticon-dislike:before {
+.flaticon-report:before {
   content: '\e000';
 }
 
-.flaticon-like:before {
+.flaticon-dislike:before {
   content: '\e001';
+}
+
+.flaticon-like:before {
+  content: '\e002';
 }

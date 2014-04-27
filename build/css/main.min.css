@@ -2031,11 +2031,14 @@ you can use the generic selector below, but it's slower:
   font-style: normal;
   margin-left: 20px; }
 
-.flaticon-dislike:before {
+.flaticon-report:before {
   content: '\e000'; }
 
-.flaticon-like:before {
+.flaticon-dislike:before {
   content: '\e001'; }
+
+.flaticon-like:before {
+  content: '\e002'; }
 
 %clearfix:after {
   clear: both;
