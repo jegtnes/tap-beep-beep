@@ -1,8 +1,11 @@
 $(document).ready(function() {
 
+  var reportedContent = null;
+
   var dialog = new fries.Dialog({
     selector: '#reportDialog',
     callbackOk: function () {
+      reportedContent.remove();
       this.hide();
     },
     callbackCancel: function () {
@@ -11,6 +14,7 @@ $(document).ready(function() {
   });
 
   $('.card__overlay__section--report').on('click', function() {
+    reportedContent = $(this).closest('.card');
     dialog.show();
   });
 
