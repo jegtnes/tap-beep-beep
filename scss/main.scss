@@ -26,6 +26,25 @@ $white: #fff;
   font-style: normal;
 }
 
+.icon-newtext:before,
+.icon-newphoto:before {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'icomoon';
+}
+
+.icon-newtext:before {
+  content: "\e00b";
+}
+.icon-newphoto:before {
+  content: "\e00c";
+}
+
 body {
   color: $grey--dark;
 }
@@ -106,7 +125,11 @@ body {
 .tbb-icon {
   height: 32px;
   margin-right: 6px;
-  width: 32px;
+  width: auto;
+}
+
+.action-bar .app-icon {
+  margin-left: 0;
 }
 
 img {
@@ -121,7 +144,7 @@ img {
 }
 
 .action-bar {
-  .icon-import-export, .icon-send {
+  [class^='icon-'] {
     color: $white;
   }
 }
