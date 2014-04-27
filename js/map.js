@@ -13,7 +13,7 @@ $(document).ready(function() {
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Cribs Q',
       infoWindow: {
-        content: '<p>Cribs Q</p>'
+        content: '<p>Cribs Q</p><p>358 tap-ins this month</p>'
       }
     });
 
@@ -24,7 +24,7 @@ $(document).ready(function() {
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Q Block Info Point',
       infoWindow: {
-        content: '<p>Q Block Info Point</p>'
+        content: '<p>Q Block Info Point</p><p>129 tap-ins this month</p>'
       }
     });
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Q Block Pond',
       infoWindow: {
-        content: '<p>Q Block Pond</p>'
+        content: '<p>Q Block Pond</p><p>980 tap-ins this month</p>'
       }
     });
 
@@ -46,7 +46,7 @@ $(document).ready(function() {
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Full Of Beans',
       infoWindow: {
-        content: '<p>Full Of Beans</p>'
+        content: '<p>Full Of Beans</p><p>84 tap-ins this month</p>'
       }
     });
 
@@ -57,7 +57,7 @@ $(document).ready(function() {
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Jimmy Deane\'s Fruit & Veg',
       infoWindow: {
-        content: '<p>Jimmy Deane\'s Fruit &amp; Veg</p>'
+        content: '<p>Jimmy Deane\'s Fruit &amp; Veg</p><p>102 tap-ins this month</p>'
       }
     });
 
@@ -68,7 +68,7 @@ $(document).ready(function() {
       icon: "/build/img/map-marker-tappoint.png",
       title: 'The SU Shop',
       infoWindow: {
-        content: '<p>The SU Shop</p>'
+        content: '<p>The SU Shop</p><p>577 tap-ins this month</p>'
       }
     });
 
@@ -79,7 +79,7 @@ $(document).ready(function() {
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Escape Bar',
       infoWindow: {
-        content: '<p>Escape Bar</p>'
+        content: '<p>Escape Bar</p><p>1036 tap-ins this month</p>'
       }
     });
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Red Bar',
       infoWindow: {
-        content: '<p>Red Bar</p>'
+        content: '<p>Red Bar</p><p>712 tap-ins this month</p>'
       }
     });
 
