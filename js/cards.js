@@ -1,13 +1,17 @@
 $(document).ready(function() {
 
   var dialog = new fries.Dialog({
-  selector: '#reportDialog',
-  callbackOk: function () {
-    this.hide();
-  },
-  callbackCancel: function () {
-    this.hide();
-  }
+    selector: '#reportDialog',
+    callbackOk: function () {
+      this.hide();
+    },
+    callbackCancel: function () {
+      this.hide();
+    }
+  });
+
+  $('.card__overlay__section--report').on('click', function() {
+    dialog.show();
   });
 
   $('.card').on('click', function() {
@@ -38,9 +42,5 @@ $(document).ready(function() {
       $(this).addClass('card__overlay--hidden');
       $(this).dequeue();
     });
-  });
-
-  $('.card__overlay__section--report').on('click', function() {
-    dialog.show();
   });
 });
