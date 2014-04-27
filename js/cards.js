@@ -13,7 +13,14 @@ $(document).ready(function() {
 
     stat = $(this).find('.card__overlay__social-stat');
     rating = parseInt(stat.text());
-    rated ? rating-- : rating++;
+    if (rated) {
+      rating--;
+      var toast = new fries.Toast({ content: "Removed sentiment from content." });
+    }
+    else {
+      rating++;
+      var toast = new fries.Toast({ content: "Added sentiment to content." });
+    }
     stat.text(rating);
 
     // Hides overlay after 250ms
