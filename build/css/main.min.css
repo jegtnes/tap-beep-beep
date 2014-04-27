@@ -2257,7 +2257,7 @@ img {
   font-size: 32px;
   color: #fff; }
 
-.action-bar .icon-import-export, .action-bar .icon-send {
+.action-bar [class^='icon-'] {
   color: #fff; }
 
 .input-text {

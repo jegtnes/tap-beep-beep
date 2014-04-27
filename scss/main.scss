@@ -144,7 +144,7 @@ img {
 }
 
 .action-bar {
-  .icon-import-export, .icon-send {
+  [class^='icon-'] {
     color: $white;
   }
 }
