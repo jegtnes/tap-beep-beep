@@ -31,3 +31,17 @@ $('.filter-menu input[type=radio]').on('change', function() {
     $('.filter-menu').hide();
   }, 200);
 });
+
+$('.filter-menu input[type=checkbox]').on('change', function(e) {
+  $checkbox = $(e.target);
+  type = $checkbox.attr('id').split('-')[1];
+  checked = $checkbox.is(':checked');
+
+  $matchedContent = $('.content .card--' + type);
+
+  if (checked) {
+    $matchedContent.show();
+  } else {
+    $matchedContent.hide();
+  }
+});
