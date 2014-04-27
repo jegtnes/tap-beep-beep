@@ -2029,15 +2029,21 @@ you can use the generic selector below, but it's slower:
   margin-bottom: 12px;
   position: relative; }
 
-.card__overlay {
+.card__overlay, .card__overlay__content {
   position: absolute;
-  background-color: rgba(54, 54, 54, 0.7);
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 0; }
+
+.card__overlay {
+  background-color: rgba(54, 54, 54, 0.7);
   color: #fff;
   padding: 12px; }
+
+.card__overlay__content {
+  margin: auto;
+  height: 80px; }
 
 .card__heading {
   color: #363636;

@@ -6,15 +6,24 @@
   position: relative;
 }
 
-.card__overlay {
+.card__overlay,
+.card__overlay__content {
   position: absolute;
-  background-color: rgba($grey--dark, 0.7);
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.card__overlay {
+  background-color: rgba($grey--dark, 0.7);
   color: $white;
   padding: 12px;
+}
+
+.card__overlay__content {
+  margin: auto;
+  height: 80px;
 }
 
 .card__heading {
