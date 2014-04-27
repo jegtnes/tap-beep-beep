@@ -6,13 +6,28 @@
   position: relative;
 }
 
-.card__overlay {
+.card__overlay,
+.card__overlay__content {
   position: absolute;
-  background-color: rgba($grey--dark, 0.7);
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.card__overlay {
+  background-color: rgba($grey--dark, .7);
+  color: $white;
+  padding: 12px;
+}
+
+.card__overlay--hidden {
+  display: none;
+}
+
+.card__overlay__content {
+  margin: auto;
+  height: 55px;
 }
 
 .card__heading {
@@ -29,4 +44,33 @@
   color: $grey--light;
   float: right;
   font-size: 10px;
+}
+
+.card__overlay__section {
+  width: 33%;
+  float: left;
+
+  [class^='flaticon-'] {
+    &:before {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.card__overlay__section--report {
+  text-align: center;
+
+  .flaticon-report {
+    &:before {
+      display: block;
+      margin: 0 auto;
+      font-size: 32px;
+    }
+  }
+}
+
+.card__overlay__social-stat {
+  margin: 0 auto;
+  font-size: 32px;
+  text-align: center;
 }

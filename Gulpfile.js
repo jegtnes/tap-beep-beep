@@ -40,5 +40,13 @@ gulp.task('watch', function() {
   gulp.watch(paths.styles, ['styles']);
 });
 
+gulp.task('livereload', function() {
+  var lr = require('gulp-livereload')();
+  // Watch for changes in compiled files
+   gulp.watch('/build/**', function (file) {
+     lr.changed(file.path);
+   });
+});
+
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['scripts', 'styles']);

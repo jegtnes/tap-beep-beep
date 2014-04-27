@@ -2029,13 +2029,24 @@ you can use the generic selector below, but it's slower:
   margin-bottom: 12px;
   position: relative; }
 
-.card__overlay {
+.card__overlay, .card__overlay__content {
   position: absolute;
-  background-color: rgba(54, 54, 54, 0.7);
   top: 0;
   left: 0;
   bottom: 0;
   right: 0; }
+
+.card__overlay {
+  background-color: rgba(54, 54, 54, 0.7);
+  color: #fff;
+  padding: 12px; }
+
+.card__overlay--hidden {
+  display: none; }
+
+.card__overlay__content {
+  margin: auto;
+  height: 55px; }
 
 .card__heading {
   color: #363636;
@@ -2049,6 +2060,24 @@ you can use the generic selector below, but it's slower:
   color: #b0b0b0;
   float: right;
   font-size: 10px; }
+
+.card__overlay__section {
+  width: 33%;
+  float: left; }
+  .card__overlay__section [class^='flaticon-']:before {
+    margin-bottom: 8px; }
+
+.card__overlay__section--report {
+  text-align: center; }
+  .card__overlay__section--report .flaticon-report:before {
+    display: block;
+    margin: 0 auto;
+    font-size: 32px; }
+
+.card__overlay__social-stat {
+  margin: 0 auto;
+  font-size: 32px;
+  text-align: center; }
 
 @font-face {
   font-family: 'Flaticon';
