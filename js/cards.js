@@ -9,21 +9,14 @@ $(document).ready(function() {
   .card__overlay__section--dislike').on('click', function() {
     rated = $(this).hasClass('js-rated');
     $(this).toggleClass('js-rated');
+    $(this).toggleClass('card__overlay__social-stat--active');
 
     stat = $(this).find('.card__overlay__social-stat');
     rating = parseInt(stat.text());
-
-    if(rated) {
-      rating--;
-    }
-    else {
-      rating++;
-    }
-
+    rated ? rating-- : rating++;
     stat.text(rating);
 
-    $(this).toggleClass('card__overlay__social-stat--active');
-
+    // Hides overlay after 250ms
     $(this).closest('.card__overlay').delay(250).queue(function(){
       $(this).addClass('card__overlay--hidden');
       $(this).dequeue();
