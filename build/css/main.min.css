@@ -2228,6 +2228,9 @@ img {
   font-size: 32px;
   color: #fff; }
 
+.toggle-filter-menu .icon-import-export {
+  color: #fff; }
+
 .action-overflow-list {
   display: block;
   position: absolute;
