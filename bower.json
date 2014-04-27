@@ -18,6 +18,7 @@
     "jquery": "latest",
     "fries": "~2.0.3",
     "hammerjs": "latest",
-    "gmaps": "~0.4.1"
+    "gmaps": "~0.4.1",
+    "parsequery": "git@github.com:rapportive-oss/jquery-parsequery.git"
   }
 }
