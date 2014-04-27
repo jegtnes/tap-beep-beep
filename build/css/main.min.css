@@ -2229,7 +2229,10 @@ body {
 .tbb-icon {
   height: 32px;
   margin-right: 6px;
-  width: 32px; }
+  width: auto; }
+
+.action-bar .app-icon {
+  margin-left: 0; }
 
 img {
   max-width: 100%; }
