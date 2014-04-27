@@ -2040,10 +2040,6 @@ you can use the generic selector below, but it's slower:
 .flaticon-like:before {
   content: '\e002'; }
 
-%clearfix:after {
-  clear: both;
-  content: '';
-  display: table; }
 
 @font-face {
   font-family: 'icomoon';
@@ -2098,33 +2094,6 @@ you can use the generic selector below, but it's slower:
 
 img {
   max-width: 100%; }
-
-.card {
-  background-color: #fff;
-  color: #b0b0b0;
-  margin-bottom: 12px;
-  position: relative; }
-
-.card__overlay {
-  position: absolute;
-  background-color: rgba(54, 54, 54, 0.7);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
-
-.card__heading {
-  color: #363636;
-  font-weight: 400; }
-
-.card__content {
-  padding: 0 5px 5px;
-  overflow: auto; }
-
-.card__timestamp {
-  color: #b0b0b0;
-  float: right;
-  font-size: 10px; }
 
 .toggle-spinner .icon-new {
   font-size: 32px;
