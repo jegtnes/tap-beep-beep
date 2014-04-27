@@ -13,6 +13,8 @@
   left: 0;
   bottom: 0;
   right: 0;
+  color: $white;
+  padding: 12px;
 }
 
 .card__heading {
@@ -29,4 +31,32 @@
   color: $grey--light;
   float: right;
   font-size: 10px;
+}
+
+.card__overlay__section {
+  width: 33%;
+  float: left;
+  [class^='flaticon-'] {
+    &:before {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.card__overlay__section--report {
+  text-align: center;
+
+  .flaticon-report {
+    &:before {
+      display: block;
+      margin: 0 auto;
+      font-size: 32px;
+    }
+  }
+}
+
+.card__overlay__social-stat {
+  margin: 0 auto;
+  font-size: 32px;
+  text-align: center;
 }
