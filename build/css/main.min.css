@@ -2043,7 +2043,7 @@ you can use the generic selector below, but it's slower:
 
 .card__overlay__content {
   margin: auto;
-  height: 80px; }
+  height: 55px; }
 
 .card__heading {
   color: #363636;
