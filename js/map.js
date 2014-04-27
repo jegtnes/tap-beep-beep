@@ -2,8 +2,9 @@ $(document).ready(function() {
   if ($('#map').length) {
     map = new GMaps({
       div: '#map',
-      lat: 51.499940,
-      lng: -2.547272
+      lat: 51.500500,
+      lng: -2.548000,
+      zoom: 17
     });
 
     // Cribs Q
