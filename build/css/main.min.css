@@ -2313,6 +2313,9 @@ you can use the generic selector below, but it's slower:
   font-weight: normal;
   font-style: normal; }
 
+body {
+  color: #363636; }
+
 .action-bar {
   background-color: #962121;
   border-bottom: 0;
@@ -2364,7 +2367,7 @@ img {
   font-size: 32px;
   color: #fff; }
 
-.toggle-filter-menu .icon-import-export, .toggle-filter-menu .icon-send {
+.action-bar .icon-import-export, .action-bar .icon-send {
   color: #fff; }
 
 .input-text {

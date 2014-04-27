@@ -26,6 +26,10 @@ $white: #fff;
   font-style: normal;
 }
 
+body {
+  color: $grey--dark;
+}
+
 .action-bar {
   background-color: $brand;
   border-bottom: 0;
@@ -103,7 +107,7 @@ img {
   }
 }
 
-.toggle-filter-menu {
+.action-bar {
   .icon-import-export, .icon-send {
     color: $white;
   }
