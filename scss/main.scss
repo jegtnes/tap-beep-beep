@@ -32,7 +32,7 @@ body {
 
 .action-bar {
   background-color: $brand;
-  border-bottom: 0;
+  border-bottom-color: #811c1c;
   box-shadow: none;
 }
 
@@ -85,6 +85,11 @@ body {
 .list-heading,
 .list-subheading {
   line-height: 1;
+}
+
+.card {
+  border-bottom: 2px solid #dbdbdb;
+  border-radius: 0 0 5px 5px;
 }
 
 .list-heading,
