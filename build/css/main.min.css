@@ -2018,6 +2018,38 @@ you can use the generic selector below, but it's slower:
   font-size: 13px;
   text-align: center; }
 
+%clearfix:after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.card {
+  background-color: #fff;
+  color: #b0b0b0;
+  margin-bottom: 12px;
+  position: relative; }
+
+.card__overlay {
+  position: absolute;
+  background-color: rgba(54, 54, 54, 0.7);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.card__heading {
+  color: #363636;
+  font-weight: 400; }
+
+.card__content {
+  padding: 0 5px 5px;
+  overflow: auto; }
+
+.card__timestamp {
+  color: #b0b0b0;
+  float: right;
+  font-size: 10px; }
+
 @font-face {
   font-family: 'Flaticon';
   src: url('/build/fonts/flaticon.eot');
@@ -2040,6 +2072,71 @@ you can use the generic selector below, but it's slower:
 .flaticon-like:before {
   content: '\e002'; }
 
+.action-bar.fixed-top {
+  z-index: 9999; }
+
+.main-navigation {
+  width: 70%;
+  position: fixed;
+  top: 48px;
+  bottom: 0;
+  left: -100%;
+  z-index: 9998;
+  background-color: #eee;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease; }
+  .main-navigation.main-navigation--open {
+    left: 0; }
+  .main-navigation .main-navigation__item a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #3d3d3d; }
+    .main-navigation .main-navigation__item a:hover, .main-navigation .main-navigation__item a:focus {
+      background-color: #e0e0e0; }
+    .main-navigation .main-navigation__item a i {
+      display: inline-block;
+      width: 25px; }
+  .main-navigation .main-navigation__item--active {
+    font-weight: bold; }
+  .main-navigation .main-navigation__point {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #ccc;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase; }
+    .main-navigation .main-navigation__point strong {
+      display: block;
+      color: #4f4f4f;
+      font-size: 40px;
+      line-height: 45px; }
+
+.filter-menu {
+  width: 60%;
+  position: fixed;
+  top: 48px;
+  bottom: 0;
+  right: 0;
+  z-index: 9998;
+  background: white;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  color: black;
+  padding-left: 10px; }
+  .filter-menu li {
+    display: block !important;
+    padding: 2px; }
+  .filter-menu p {
+    margin: 10px 0 0; }
+  .filter-menu input {
+    margin-right: 10px; }
+  .filter-menu label {
+    width: 50%;
+    display: inline-block; }
 
 @font-face {
   font-family: 'icomoon';
@@ -2122,69 +2219,3 @@ img {
 
 .tap-map {
   color: #363636; }
-
-.action-bar.fixed-top {
-  z-index: 9999; }
-
-.main-navigation {
-  width: 70%;
-  position: fixed;
-  top: 48px;
-  bottom: 0;
-  left: -100%;
-  z-index: 9998;
-  background-color: #eee;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
-  -webkit-transition: left 0.5s ease;
-  -moz-transition: left 0.5s ease;
-  transition: left 0.5s ease; }
-  .main-navigation.main-navigation--open {
-    left: 0; }
-  .main-navigation .main-navigation__item a {
-    display: block;
-    padding: 10px 15px;
-    border-bottom: 1px solid #e6e6e6;
-    color: #3d3d3d; }
-    .main-navigation .main-navigation__item a:hover, .main-navigation .main-navigation__item a:focus {
-      background-color: #e0e0e0; }
-    .main-navigation .main-navigation__item a i {
-      display: inline-block;
-      width: 25px; }
-  .main-navigation .main-navigation__item--active {
-    font-weight: bold; }
-  .main-navigation .main-navigation__point {
-    padding: 10px 15px;
-    border-bottom: 1px solid #e6e6e6;
-    color: #ccc;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase; }
-    .main-navigation .main-navigation__point strong {
-      display: block;
-      color: #4f4f4f;
-      font-size: 40px;
-      line-height: 45px; }
-
-.filter-menu {
-  width: 60%;
-  position: fixed;
-  top: 48px;
-  bottom: 0;
-  right: 0;
-  z-index: 9998;
-  background: white;
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
-  color: black;
-  padding-left: 10px; }
-  .filter-menu li {
-    display: block !important;
-    padding: 2px; }
-  .filter-menu p {
-    margin: 10px 0 0; }
-  .filter-menu input {
-    margin-right: 10px; }
-  .filter-menu label {
-    width: 50%;
-    display: inline-block; }
