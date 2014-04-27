@@ -70,6 +70,14 @@ $white: #fff;
   }
 }
 
+.dialog {
+  .list {
+    > li {
+      color: $white;
+    }
+  }
+}
+
 .list-heading,
 .list-subheading {
   line-height: 1;

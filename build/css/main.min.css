@@ -2206,6 +2206,9 @@ you can use the generic selector below, but it's slower:
   .list > li:first-of-type {
     border-top: 0; }
 
+.dialog .list > li {
+  color: #fff; }
+
 .list-heading, .list-subheading {
   line-height: 1; }
 
