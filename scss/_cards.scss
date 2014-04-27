@@ -21,6 +21,10 @@
   padding: 12px;
 }
 
+.card__overlay--hidden {
+  display: none;
+}
+
 .card__overlay__content {
   margin: auto;
   height: 55px;
