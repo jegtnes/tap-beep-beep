@@ -3,7 +3,6 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
-var lr = require('gulp-livereload')();
 
 var paths = {
   scripts: [
@@ -39,11 +38,14 @@ gulp.task('styles', function() {
 gulp.task('watch', function() {
   gulp.watch(paths.scripts, ['scripts']);
   gulp.watch(paths.styles, ['styles']);
+});
 
- // Watch for changes in compiled files
-  gulp.watch('/build/**', function (file) {
-    lr.changed(file.path);
-  });
+gulp.task('livereload', function() {
+  var lr = require('gulp-livereload')();
+  // Watch for changes in compiled files
+   gulp.watch('/build/**', function (file) {
+     lr.changed(file.path);
+   });
 });
 
 // The default task (called when you run `gulp` from cli)
