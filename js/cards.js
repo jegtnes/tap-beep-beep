@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+  var dialog = new fries.Dialog({
+  selector: '#reportDialog',
+  callbackOk: function () {
+    this.hide();
+  },
+  callbackCancel: function () {
+    this.hide();
+  }
+  });
+
   $('.card').on('click', function() {
     $(this).find('.card__overlay').toggleClass('card__overlay--hidden');
   }).find('.card__overlay__content').on('click', function(event) {
@@ -27,5 +38,9 @@ $(document).ready(function() {
       $(this).addClass('card__overlay--hidden');
       $(this).dequeue();
     });
-  })
+  });
+
+  $('.card__overlay__section--report').on('click', function() {
+    dialog.show();
+  });
 });
