@@ -103,8 +103,14 @@ img {
   }
 }
 
-.toggle-filter-menu .icon-import-export {
-  color: $white;
+.toggle-filter-menu {
+  .icon-import-export, .icon-send {
+    color: $white;
+  }
+}
+
+.input-text {
+  color: $grey--dark;
 }
 
 .action-overflow-list {
