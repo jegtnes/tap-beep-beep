@@ -118,5 +118,14 @@ $(document).ready(function() {
         console.log("Your browser has no geolocation")
       }
     });
+
+    if (markerName = location.hash.substr(1)) {
+      markerNames = $.map(map.markers, function(m) { return m.title.toLowerCase().replace(/\W/g, '');})
+      index = markerNames.indexOf(markerName);
+
+      if (marker = map.markers[index]) {
+        map.setCenter(marker.position.lat(), marker.position.lng());
+      }
+    }
   }
 });
