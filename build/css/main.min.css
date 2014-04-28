@@ -2177,7 +2177,7 @@ you can use the generic selector below, but it's slower:
   font-weight: normal;
   font-style: normal; }
 
-.icon-newtext:before, .icon-newphoto:before {
+.icon-newtext:before, .icon-filter:before, .icon-newphoto:before {
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -2189,6 +2189,9 @@ you can use the generic selector below, but it's slower:
 
 .icon-newtext:before {
   content: "\e00b"; }
+
+.icon-filter:before {
+  content: "\e00d"; }
 
 .icon-newphoto:before {
   content: "\e00c"; }

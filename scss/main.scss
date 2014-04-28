@@ -27,6 +27,7 @@ $white: #fff;
 }
 
 .icon-newtext:before,
+.icon-filter:before,
 .icon-newphoto:before {
   speak: none;
   font-style: normal;
@@ -41,6 +42,11 @@ $white: #fff;
 .icon-newtext:before {
   content: "\e00b";
 }
+
+.icon-filter:before {
+  content: "\e00d";
+}
+
 .icon-newphoto:before {
   content: "\e00c";
 }
