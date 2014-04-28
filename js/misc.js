@@ -5,11 +5,10 @@ $(document).ready(function() {
 
   $('.action-overflow-hidden').removeClass('action-overflow-hidden');
 
-<<<<<<< HEAD
   $('#file-button').on('click', function() {
     $('input[type=file]')[0].click();
   });
-=======
+
   query = $.parseQuery();
   if (query.upload === 'photo') {
     var toast = new fries.Toast({ content: "Thanks! Your photo will be uploaded shortly." });
@@ -17,5 +16,4 @@ $(document).ready(function() {
   else if (query.upload === 'text') {
     var toast = new fries.Toast({ content: "Thanks! Your post will be uploaded shortly." });
   }
->>>>>>> master
 });
