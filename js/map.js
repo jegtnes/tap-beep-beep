@@ -101,7 +101,6 @@ $(document).ready(function() {
     // http://www.paulund.co.uk/create-google-maps-with-gmaps-js
     GMaps.geolocate({
       success: function(position){
-        map.setCenter(position.coords.latitude, position.coords.longitude);
 
         map.addMarker({
           lat: position.coords.latitude,
