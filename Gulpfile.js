@@ -7,6 +7,7 @@ var sass = require('gulp-sass');
 var paths = {
   scripts: [
     'bower_components/jquery/dist/jquery.min.js',
+    'bower_components/parsequery/jquery.parsequery.min.js',
     'bower_components/fries/lib/js/*.js',
     '!bower_components/fries/lib/js/stack.js',
     '!bower_components/fries/lib/js/action-bars.js',

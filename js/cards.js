@@ -42,7 +42,7 @@ $(document).ready(function() {
     }
     else {
       rating++;
-      var toast = new fries.Toast({ content: verb + "d this!." });
+      var toast = new fries.Toast({ content: verb + "d this!" });
     }
     stat.text(rating);
 
