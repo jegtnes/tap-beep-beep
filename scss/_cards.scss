@@ -1,7 +1,7 @@
 .card {
   @extend %clearfix;
   background-color: $white;
-  color: $grey--light;
+  color: rgba($grey--dark, 0.9);
   margin-bottom: 12px;
   position: relative;
 }
