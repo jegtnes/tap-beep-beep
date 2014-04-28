@@ -55,8 +55,8 @@ $(document).ready(function() {
 
     // Jimmy Deane's Fruit & Veg
     map.addMarker({
-      lat: 51.500395,
-      lng: -2.548038,
+      lat: 51.500295,
+      lng: -2.547956,
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Jimmy Deane\'s Fruit & Veg',
       infoWindow: {
