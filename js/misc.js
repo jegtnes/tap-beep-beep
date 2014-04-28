@@ -3,4 +3,12 @@ $(document).ready(function() {
     $('#tapInExplanation').toggleClass('explanation-hidden')
   });
   $('.action-overflow-hidden').removeClass('action-overflow-hidden');
+
+  query = $.parseQuery();
+  if (query.upload === 'photo') {
+    var toast = new fries.Toast({ content: "Thanks! Your photo will be uploaded shortly." });
+  }
+  else if (query.upload === 'text') {
+    var toast = new fries.Toast({ content: "Thanks! Your post will be uploaded shortly." });
+  }
 });
