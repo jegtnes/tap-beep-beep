@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('.tap-map').height($(window).height() - 80);
+
   if ($('#map').length) {
     map = new GMaps({
       div: '#map',
