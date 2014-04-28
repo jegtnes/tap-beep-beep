@@ -127,6 +127,7 @@ $(document).ready(function() {
 
       if (marker = map.markers[index]) {
         map.setCenter(marker.position.lat(), marker.position.lng());
+        map.setZoom(18);
       }
     }
   }
