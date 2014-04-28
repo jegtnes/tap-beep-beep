@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('.tap-map').height($(window).height() - 80);
+
   if ($('#map').length) {
     map = new GMaps({
       div: '#map',
@@ -53,8 +55,8 @@ $(document).ready(function() {
 
     // Jimmy Deane's Fruit & Veg
     map.addMarker({
-      lat: 51.500395,
-      lng: -2.548038,
+      lat: 51.500295,
+      lng: -2.547956,
       icon: "/build/img/map-marker-tappoint.png",
       title: 'Jimmy Deane\'s Fruit & Veg',
       infoWindow: {
@@ -98,25 +100,35 @@ $(document).ready(function() {
     // Kudos to the the fine ladies and gents at Paulund for this function
     // http://www.paulund.co.uk/create-google-maps-with-gmaps-js
     GMaps.geolocate({
-    success: function(position){
-      map.setCenter(position.coords.latitude, position.coords.longitude);
+      success: function(position){
+        map.setCenter(position.coords.latitude, position.coords.longitude);
 
-      map.addMarker({
-        lat: position.coords.latitude,
-        lng: position.coords.longitude,
-        icon: "/build/img/map-marker-geolocation.png",
-        title: 'You are here.',
-        infoWindow: {
-          content: '<p>You are here!</p>'
-        }
-      });
-    },
-    error: function(error){
-      console.log('Geolocation failed: '+error.message);
-    },
-    not_supported: function(){
-      console.log("Your browser has no geolocation")
+        map.addMarker({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+          icon: "/build/img/map-marker-geolocation.png",
+          title: 'You are here.',
+          infoWindow: {
+            content: '<p>You are here!</p>'
+          }
+        });
+      },
+      error: function(error){
+        console.log('Geolocation failed: '+error.message);
+      },
+      not_supported: function(){
+        console.log("Your browser has no geolocation")
+      }
+    });
+
+    if (markerName = location.hash.substr(1)) {
+      markerNames = $.map(map.markers, function(m) { return m.title.toLowerCase().replace(/\W/g, '');})
+      index = markerNames.indexOf(markerName);
+
+      if (marker = map.markers[index]) {
+        map.setCenter(marker.position.lat(), marker.position.lng());
+        map.setZoom(18);
+      }
     }
-  });
   }
 });
