@@ -7,6 +7,7 @@ $(document).ready(function() {
       selector: '#reportDialog',
       callbackOk: function () {
         reportedContent.remove();
+        var toast = new fries.Toast({ content: "Content reported! The mods will take a look." });
         this.hide();
       },
       callbackCancel: function () {
